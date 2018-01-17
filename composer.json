@@ -1,0 +1,19 @@
+{
+  "name": "sduval/prestashop-manager",
+  "license": "MIT",
+  "description": "Manage a prestashop project",
+  "autoload": {
+    "psr-4": {
+      "SDuval\\Prestashop\\Manager\\": "src/"
+    }
+  },
+  "require": {
+    "gskema/prestashop-installer": "^2.2",
+    "symfony/process": "^4.0",
+    "phpunit/phpunit-selenium": "^4.1",
+    "fzaninotto/faker": "^1.7"
+  },
+  "bin": [
+    "prestashop"
+  ]
+}

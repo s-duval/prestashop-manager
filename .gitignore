@@ -1,0 +1,6 @@
+./idea
+/vendor/
+/coverage/
+/errorScreenshots/
+/node_modules
+/screenshots
