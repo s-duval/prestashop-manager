@@ -1,0 +1,21 @@
+<phpunit bootstrap="bootstrap.php">
+    <testsuites>
+        <testsuite name="Prestashop">
+            <!--<file>Tests/CartTest.php</file>-->
+            <file>Tests/CheckoutTest.php</file>
+        </testsuite>
+    </testsuites>
+    <php>
+        <const name="PS_URL" value="http://www.yourshop.com"/>
+        <const name="PS_DIR" value="/path/to/shop"/>
+        <const name="SCREENSHOT_DIR" value="screenshots" />
+    </php>
+    <logging>
+        <log type="testdox-html" target="./coverage/testdox.html"/>
+    </logging>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory>Tests</directory>
+        </whitelist>
+    </filter>
+</phpunit>
